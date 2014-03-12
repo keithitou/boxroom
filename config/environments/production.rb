@@ -79,18 +79,18 @@ Boxroom::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Mail settings
-  # config.action_mailer.delivery_method = :smtp
-  # config.action_mailer.smtp_settings = {
-  #   :address => 'mailhost',
-  #   :port => 587,
-  #   :user_name => 'user_name',
-  #   :password => 'password',
-  #   :authentication => 'plain'
-  # }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address => 'mail.nps.ne.jp',
+    :port => 587,
+    :user_name => 'k.itou',
+    :password => 'kabesu',
+    :authentication => 'plain'
+  }
 
   # Host
-  # config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => 'enigmatic-stream-9694.herokuapp.com' }
 
   # From address
-  # ActionMailer::Base.default :from => 'Boxroom <yourname@yourdomain.com>'
+  ActionMailer::Base.default :from => 'Boxroom <k.itou@nps.ne.jp>'
 end
