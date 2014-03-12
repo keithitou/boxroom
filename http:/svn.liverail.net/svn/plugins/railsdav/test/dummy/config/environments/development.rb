@@ -1,4 +1,4 @@
-Boxroom::Application.configure do
+Dummy::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -23,22 +23,7 @@ Boxroom::Application.configure do
   config.active_record.migration_error = :page_load
 
   # Debug mode disables concatenation and preprocessing of assets.
+  # This option may cause significant delays in view rendering with a large
+  # number of complex assets.
   config.assets.debug = true
-  config.assets.compile = true
-  
-  # Mail settings
-  # config.action_mailer.delivery_method = :smtp
-  # config.action_mailer.smtp_settings = {
-  #   :address => 'mailhost',
-  #   :port => 587,
-  #   :user_name => 'user_name',
-  #   :password => 'password',
-  #   :authentication => 'plain'
-  # }
-
-  # Host
-  # config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-
-  # From address
-  # ActionMailer::Base.default :from => 'Boxroom <yourname@yourdomain.com>'
 end

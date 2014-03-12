@@ -8,3 +8,11 @@ db/*.sqlite3
 log/*
 tmp/*
 uploads/*
+
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
